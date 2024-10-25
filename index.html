@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+  
+    <title>
+      Online Store - Shoes
+    </title>
+  </head>
+  <body>
+     <!--Nav-->
+     <div class="container">
+      <nav>
+        <div class="menu-left">
+          <div class="title">
+            <a href="">Online Store - Kiet</a>
+          </div>
+          <a href="#">TRANG CHỦ</a>
+          <a href="#">GIỚI THIỆU</a>
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#">SẢN PHẨM</a>
+            <ul class="dropdown-menu"  id="menu">
+              <li><a class="dropdown-items" >GIÀY ADIDAS</a></li>
+              <li>
+                <a class="dropdown-items" >GIÀY NIKE</a>
+              </li>
+              <li><a class="dropdown-items" >GIÀY MLB</a></li>
+            </ul>
+          </div>
+          <a href="#">BLOG</a>
+
+          <a href="#">LIÊN HỆ</a>
+          <div class="menu-right">
+            <div class="search-container">
+              <button type="button" id="search-icon" class="search-icon">
+                <i class="bi bi-search"></i>
+              </button>
+              <div class="box-s" style="display: none">
+                <p class="titlebox">Tìm kiếm</p>
+                <div class="form" style="margin-top: 10px">
+                  <input type="text" placeholder="Nhập từ khóa tìm kiếm..." />
+                  <input type="hidden"/>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="cart">
+              <i class="bi bi-cart"></i>
+            </a>
+            <a href="#" class="user">
+              <i class="bi bi-person"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--Banner-->
+    <div class="banner">
+      <img src="./images/banner_1.jpg" alt="Banner" />
+    </div>
+
+    <!-- Main -->
+    <main>
+      <a href="#spmoi">Sản phẩm mới</a>
+      <a href="#sphot">Sản phẩm nổi bật</a>
+      <a href="#banchay">Bán chạy nhất</a>
+      <section id="spmoi">
+          <h2>SẢN PHẨM MỚI <a class="icontop" href="#top"></a> </h2>
+          <div id="data"></div>
+      </section>
+      <section id="sphot">
+          <h2>SẢN PHẨM NỔI BẬT  <a class="icontop" href="#top"></a> </h2>
+          <div id="data"></div> 
+      </section>
+      <section id="banchay">
+        <h2>SẢN PHẨM BÁN CHẠY  <a class="icontop" href="#top"></a> </h2>
+        <div id="data"></div> 
+    </section>
+  </main>
+  
+</div>
+</div>
+<!--footer-->
+<footer>
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Info</h3>
+      <ul>
+        <li><a href="#">Track Your Order</a></li>
+        <li><a href="#">Our Blog</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Community</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>About</h3>
+      <ul>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Manufacture</a></li>
+        <li><a href="#">Wholesale</a></li>
+        <li><a href="#">Retail</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Women Shoes</h3>
+      <ul>
+        <li><a href="#">Track Your Order</a></li>
+        <li><a href="#">Our Blog</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Community</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Popular</h3>
+      <ul>
+        <li><a href="#">Prices Drop</a></li>
+        <li><a href="#">New Products</a></li>
+        <li><a href="#">Best Sales</a></li>
+        <li><a href="#">Stores</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Cart</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Mens Collection</h3>
+      <ul>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Shoes</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Get In Touch</h3>
+      <p>Stylish Online Store 123 Main Street, Toulouse - France.</p>
+      <p>Call us: (+33) 800 456 789-987</p>
+      <p><a href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; Copyright Stylish 2023.</p>
+    <p>Free HTML by <a href="#">TemplatesJungle</a> | Distributed by <a href="#">ThemeWagon</a></p>
+  </div>
+</footer>
+
+</body>
+<script src="/js/style.js"></script>
+<script type="module">
+  import {lay_loai, lay_sp, sp_noi_bat, sp_ban_chay} from './js/index.js';
+
+  document.querySelector("#menu").innerHTML = await lay_loai();
+  document.querySelector("#spmoi #data").innerHTML = await lay_sp(4);
+  document.querySelector("#sphot #data").innerHTML = await sp_noi_bat(4);
+  document.querySelector("#banchay #data").innerHTML = await sp_ban_chay(4);
+
+</script>
+</html>
